@@ -6,7 +6,7 @@ import axiosClient from "./axiosClient";
  */
 export function login({ email, password }) {
   const form = new URLSearchParams();
-  form.append("email", email);
+  form.append("username", email);
   form.append("password", password);
 
   return axiosClient
